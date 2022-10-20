@@ -8,10 +8,13 @@
 </head>
 <body>
     
+    <!-- Allt inom denna div hör till sidebaren -->
 
     <div class = 'sidebar'>
         <img src="images/Jeoson.png" alt="Picture of Joe Jeson" id='Jeoson'>
         
+<!-- Skapar -->
+
         <div class = 'sidebarBody'>
 
             <a href="#Page1" class = sidebarText>Om mig</a>
@@ -24,25 +27,25 @@
 
     </div> 
 
-<div class = clear></div>
+
 
 <!-- En div för första sidan. -->
 
 <div class = "Page" id = "Page1">
 
-    <div class = 'Header2'>
+    <!-- Skapar den stora rutan med sidans header -->
+    <div class = 'Header'>
+        <h1 class = h1>
+            Jag heter Joe Jeoson
+        </h1>
+    </div>
+    <!---->
+    <div id = 'Header2'>
         <h1 class = "HeaderText">
             Om mig
         </h1>
     </div>
     
-    <div class = 'Header3'>
-        <h1 class = h1>
-            Jag heter Joe Jeoson
-        </h1>
-    </div>
-
-
     <div class = 'p1'>
         <p1>
         Jag är en man på någonstans runt 40 år, minns inte riktigt. Jag är hursomhelst kunnig inom programmering, webbutveckling, och även mycket annat inom teknikens område. Jag arbetar bra i grupp, men är inte rädd för att ta iniativ och lösa problem på egen hand. Jag är också en, inte minst av mig själv, uppskattad medarbetare.
@@ -52,20 +55,17 @@
 </div>
 
 
-
-
-
-
-
 <!-- Skapar andra sidan, med information om utbildning -->
 
 <div class = 'Page' id = "Page2">
 
-    <div class = 'Header3'>
+    <div class = 'Header'>
         <h1 class = "HeaderText">
             Utbildning
         </h1>
     </div>
+
+    <!-- Skapar textrutan och bild för, i detta fallet, NTI. Samma kod för UU-->
 
     <div class = "UtbildningDiv">
         <img src='images/NTI.png' alt = "NTI Gymnasiet">
@@ -100,20 +100,14 @@
             <p1>Civilingenjör i Datateknik</p1>
 
         </div>
-
-
-
     </div>
-
-    
-
 </div>
     
     <!-- Skapar sidan, headern och rutorna för "Tidigare arbete sidan"-->
 
 <div class = "Page" id = "Page3">
 
-    <div class = "Header3">
+    <div class = "Header">
 
         <h1 class = "HeaderText">
             Erfarenhet
@@ -121,14 +115,17 @@
 
     </div>
 
-    <div class = "Erf_Card">
+    <!-- Skapar bilden för varje tidigare jobb -->
+
+    <div class = "Erf_Card" id = "TopErfCard">
 
         <div class = "Erf_Image">
 
             <img src="images/Gruva.png">
-    
-    
+
         </div>
+
+    <!-- Skapar textrutan för erfarnhets-sidan -->
 
         <div class = "Erf_Text">
 
@@ -138,13 +135,12 @@
 
     </div>
 
-    <!-- Skapar kärnkraftverks kortet samt text -->
 
     <div class = "Erf_Card">
 
         <div class = "Erf_Image">
 
-            <img src="images/Ringhals.png">
+            <img src="images/Kärnkraftverk.png">
 
         </div>
 
@@ -155,8 +151,7 @@
         </div>
 
     </div>
-    
-    <!-- Skapar Apple-kortet och texten -->
+
 
     <div class = "Erf_Card">
 
@@ -177,7 +172,7 @@
 
 <div class = "Page" id = "Page4">
 
-    <div class = Header3>
+    <div class = Header>
 
         <h1 class = HeaderText>
             Tidigare Projekt
@@ -186,80 +181,59 @@
 
     </div>
 
-    <!--- Här är rutorna för "Tidigare projekt sidan, vill att man ska kunna klicka på dessa, men gör det senare"-->
+    <!--- Rutorna för "Tidigare Projekt" sidan.-->
 
     <div id = "TidProj">
-
-        <a href="https://obama.sexy/" class = Proj1 id = "TopCard">En mycket fin hemsida</a>
-
-        <a href="" class = Proj1>
-            
-            Ett fint program jag gjort
-
-        </a>
-
-        <a href="https://www.youtube.com/watch?v=FOq7J-4QxYo" class = Proj1>
-
-            En annan grej
-
-        </a>
-
-    </div>
-    
+        <a href="https://www.google.com/" class = Proj1 id = "TopCard">En av mina tidigare hemsidor</a>
+        <a href="https://www.bing.com/" class = Proj1> En annan tidigare hemsida </a>
+        <a href="https://www.youtube.com/watch?v=FOq7J-4QxYo" class = Proj1>Ett annat tidigare projekt</a>
+     </div>   
 </div>
 
-<div class = "Page" id = "Page5">
+<!-- Skapar sista sidan -->
 
-    <div class = "Header3">
+<div class = "Page" id = "Page5">
+    <div class = "Header">
 
         <h1 class = "HeaderText">
         Kontakta mig
 
         </h1>
-
-
     </div>
 
-    <div class = "KontaktInfoCard">
+    <!-- Dessa skapar varje textruta och medföljande bild för "kontaka mig" sidan -->
 
+    <div class = "KontaktInfoCard">
         <img src="images/gmail.png" class = "KontaktCardImage">
-        
 
         <h3 class = KontaktCardText>
             JoeJeoson@gmail.com
 
-        </h3>
-        
+        </h3>   
     </div>
 
     <div class = "KontaktInfoCard">
-
         <img src="images/le house.png" class = "KontaktCardImage">
         
-
         <h3 class = KontaktCardText id = HouseText>
-            Placeholdergatan 34b, Linköping
+            Skolgatan 34b, Linköping
 
         </h3>
-        
     </div>
 
     <div class = "KontaktInfoCard">
-
         <img src="images/phone.png" class = "KontaktCardImage">
         
 
         <h3 class = KontaktCardText>
             +46 012-345-67-89
 
-        </h3>
-        
+        </h3>   
     </div>
-
-    
-
-
 </div>
+
+<!-- Finns för att skapa lite mer utrymme för kontakta mig sidan,
+     och är den lite mörkare delen allra längst ner på hemsidan. -->
 
 <div class = "Rectangle"></div>
 
